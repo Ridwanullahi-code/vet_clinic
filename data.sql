@@ -1,4 +1,4 @@
-SET datestyle = dmy
+SET datestyle = dmy;
 
 INSERT INTO animals(name, date_of_birth, escape_attempts, neutered, weight_kg)
 VALUES('Agumon','02/03/2020',0,true,10.23);
