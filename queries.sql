@@ -29,6 +29,10 @@ WHERE weight_kg >= 10.4 AND weight_kg <= 17.3
 -- queries to perform transaction
 
 BEGIN;
+UPDATE animals SET species = 'unspecified';
+ROLLBACK;
+
+BEGIN;
 UPDATE animals SET species = 'digimon' WHERE name like '%mon';
 UPDATE animals SET species = 'pokemon'WHERE species is null;
 COMMIT;
