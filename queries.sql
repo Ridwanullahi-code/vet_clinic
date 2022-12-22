@@ -14,7 +14,7 @@ ORDER BY id ASC;
 SELECT TO_CHAR(date_of_birth:: date,  'Mon dd, yyyy') AS birth FROM animals
 WHERE name = 'Agumon' or name = 'Pikachu';
 
-SELECT name from animals
+SELECT name, escape_attempts from animals
 WHERE weight_kg > 10.5 ;
 
 SELECT * FROM animals
@@ -24,4 +24,4 @@ SELECT * FROM animals
 WHERE name != 'Gabumon';
 
 SELECT * FROM animals
-WHERE weight_kg = 10.4 OR weight_kg <= 17.3
+WHERE weight_kg >= 10.4 AND weight_kg <= 17.3

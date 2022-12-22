@@ -1,4 +1,5 @@
-/* Populate database with sample data. */
+SET datestyle = dmy;
+
 INSERT INTO animals(id, name, date_of_birth, escape_attempts, neutered, weight_kg)
 VALUES(1, 'Agumon','02/03/2020',0,true,10.23);
 INSERT INTO animals(id, name, date_of_birth, escape_attempts, neutered, weight_kg)
